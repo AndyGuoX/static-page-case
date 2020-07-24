@@ -1,0 +1,59 @@
+.main-color{
+    background-color: #e6d739;
+}
+
+.select-box-color{
+    background-color: #d3c537;
+    border: 2px dashed #b9ad34;
+}
+
+.f_e_pic_color{
+    color: #e6d739;
+}
+
+.e_tip_color{
+    color: #e6d739;
+}
+
+.reload_color{
+    border: 2px solid #e6d739;
+}
+
+.reload_color p{
+    color: #e6d739;
+}
+
+.r_i_color{
+    color: #e6d739;
+}
+
+.c_color{
+    background-color: #e6d739;
+}
+
+.f_t_color {
+    color: #e6d739;
+}
+
+.f_t_color a {
+    color: #e6d739;
+}
+
+.f_p_color {
+    color: #e6d739;
+}
+
+.before-transform {
+    background: url("./../image/pdf.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.after-transform {
+    background: url("./../image/img.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.file-show-pic{
+    background: url("./../image/img2pdf.svg") no-repeat center;
+    background-size: 100% 100%;
+}

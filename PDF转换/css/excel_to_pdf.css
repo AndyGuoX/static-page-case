@@ -1,0 +1,59 @@
+.main-color {
+    background-color: #74d941;
+}
+
+.select-box-color {
+    background-color: #6cc73e;
+    border: 2px dashed #62af3a;
+}
+
+.f_e_pic_color {
+    color: #74d941;
+}
+
+.e_tip_color {
+    color: #74d941;
+}
+
+.reload_color {
+    border: 2px solid #74d941;
+}
+
+.reload_color p {
+    color: #74d941;
+}
+
+.r_i_color {
+    color: #74d941;
+}
+
+.f_t_color {
+    color: #74d941;
+}
+
+.f_t_color a {
+    color: #74d941;
+}
+
+.f_p_color {
+    color: #74d941;
+}
+
+.c_color {
+    background-color: #74d941;
+}
+
+.before-transform {
+    background: url("./../image/excel.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.after-transform {
+    background: url("./../image/pdf.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.file-show-pic {
+    background: url("./../image/pdf2excel.svg") no-repeat center;
+    background-size: 100% 100%;
+}

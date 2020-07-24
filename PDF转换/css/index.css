@@ -1,0 +1,152 @@
+.content .con-title {
+    width: 100%;
+    font-size: 18px;
+    color: #7f6537;
+}
+
+.con-title i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("./../image/transform.png") no-repeat center;
+    background-size: 100% 100%;
+    vertical-align: middle;
+}
+
+.con-title span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.main-show {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    /*用户不能选择其中文字兼容写法*/
+    -moz-user-select: none; /*火狐*/
+    -webkit-user-select: none; /*webkit浏览器*/
+    -ms-user-select: none; /*IE10*/
+    user-select: none;
+}
+
+.main-show a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.main-show div {
+    position: relative;
+    float: left;
+    width: 25%;
+    height: 200px;
+    text-align: center;
+    font-size: 24px;
+    white-space: nowrap; /*强制不换行*/
+    overflow: hidden;
+    transition: box-shadow .3s;
+}
+
+.main-show div:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.35);
+    z-index: 100;
+}
+
+.main-show div span {
+    margin-top: 20px;
+}
+
+.main-show div i {
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 25px auto;
+    background-size: 100% 100%;
+}
+
+.pdf-ppt {
+    background-color: #ff9f19;
+}
+
+.pdf-ppt i {
+    background: url("../image/pdf2ppt.svg") no-repeat center;
+
+}
+
+.pdf-jpg {
+    background-color: #e6d739;
+}
+
+.pdf-jpg i {
+    background: url("../image/pdf2img.svg") no-repeat center;
+}
+
+.pdf-excel {
+    background-color: #00cc44;
+}
+
+.pdf-excel i {
+
+    background: url("../image/pdf2excel.svg") no-repeat center;
+}
+
+.pdf-word {
+    background-color: #3d99f5;
+}
+
+.pdf-word i {
+    background: url("../image/pdf2word.svg") no-repeat center;
+}
+
+.ppt-pdf {
+    background-color: #ff7919;
+}
+
+.ppt-pdf i {
+    background: url("../image/ppt2pdf.svg") no-repeat center;
+}
+
+.jpg-pdf {
+    background-color: #ebc50c;
+}
+
+.jpg-pdf i {
+    background: url("../image/img2pdf.svg") no-repeat center;
+}
+
+.excel-pdf {
+    background-color: #74d941;
+}
+
+.excel-pdf i {
+    background: url("../image/excel2pdf.svg") no-repeat center;
+}
+
+.word-pdf {
+    background-color: #49c8f2;
+}
+
+.word-pdf i {
+    background: url("../image/word2pdf.svg") no-repeat center;
+}
+
+@media screen and (max-width: 992px){
+
+    .main-show div{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px){
+
+    .main-show div{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 480px){
+
+    .main-show div{
+        width: 100%;
+    }
+}

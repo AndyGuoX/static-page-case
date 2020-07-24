@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Word to PDF-SWIFT PDF conversion</title>
+    <link rel="stylesheet" href="./../../lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./../../css/common.css">
+    <link rel="stylesheet" href="./../../css/transform_page.css">
+    <link rel="stylesheet" href="../../css/word_to_pdf.css">
+    <link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<input need="word" to="pdf" type="file" multiple="multiple" onchange="fileChange(this)" style="display: none;opacity:0;"
+       name="selectName" accept=".doc,.docx">
+<div class="container">
+    <div class="top"></div>
+    <div class="content">
+        <div class="transform-tips">
+            <p>Word to PDF</p>
+            <p>Convert your doc to PDF online</p>
+        </div>
+        <div class="transform-server-notFound">
+            <div class="server-notFound-pic f_p_color iconfont icon-icon-test"></div>
+            <div class="server-notFound-tips f_t_color">
+                <p>Server busy, please try again later!</p>
+            </div>
+            <div class="reload reload_color">
+                <p>again</p>
+                <i class="reload-icon r_i_color iconfont icon-zhongxinjiazai"></i>
+            </div>
+        </div>
+        <div class="transform-failure">
+            <div class="failure-pic f_p_color iconfont icon-cuowu"></div>
+            <div class="failure-tips f_t_color">
+                <p>There seems to be some problems with the conversion!</p>
+                <p>
+                    <a href="javascript:void(0);">view details</a>
+                    <a href="./../index.html">homepage</a>
+                </p>
+            </div>
+            <div class="reload reload_color">
+                <p>again</p>
+                <i class="reload-icon r_i_color iconfont icon-zhongxinjiazai"></i>
+            </div>
+        </div>
+        <div class="transform-failure-detail">
+            <p class="failure-detail-head">error message</p>
+            <p class="failure-detail-main"></p>
+        </div>
+        <div class="select-error">
+            <div class="file_error_pic f_e_pic_color iconfont icon-wenjiancuowu"></div>
+            <div class="error-tip e_tip_color">
+                <p>This doesn't look like a Word file.</p>
+            </div>
+            <div class="reload reload_color">
+                <p>again</p>
+                <i class="reload-icon r_i_color iconfont icon-zhongxinjiazai"></i>
+            </div>
+        </div>
+        <div class="select-complete">
+            <div class="file-show-box">
+                <ul class="file-list"></ul>
+            </div>
+            <div class="upload-box">
+                <div class="transform-icon">
+                    <i class="before-transform icon-up-show"></i>
+                    <i class="transform icon-up-show"></i>
+                    <i class="after-transform icon-up-show"></i>
+                </div>
+                <div class="progress-bar">
+                    <div class="completed c_color"></div>
+                </div>
+                <div class="reselect-btn">
+                    <button type="button">reselect</button>
+                </div>
+                <div class="upload-btn">
+                    <button type="submit">upload</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-box main-color">
+            <div class="main-select-box select-box-color">
+                <div class="file_picture"></div>
+                <div class="file_tip">
+                    <p>Drag and drop the file here</p>
+                    <p>Select the file</p>
+                </div>
+            </div>
+        </div>
+        <div class="specification"></div>
+    </div>
+    <div class="footer"></div>
+</div>
+<script src="./../../lib/jquery-1.11.1/jquery.min.js"></script>
+<script src="./../../scripts/specification_en.js"></script>
+<script src="./../../scripts/pdf_transform.js"></script>
+<script src="./../../scripts/translate_en_cn_page.js"></script>
+</body>
+</html>

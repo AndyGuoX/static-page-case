@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PDF转Word-极速PDF转换</title>
+    <link rel="stylesheet" href="./../../lib/iconfont/iconfont.css">
+    <link rel="stylesheet" href="./../../css/common.css">
+    <link rel="stylesheet" href="./../../css/transform_page.css">
+    <link rel="stylesheet" href="../../css/pdf_to_word.css">
+    <link rel="stylesheet" href="../../lib/font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<input need="pdf" to="word" type="file" multiple="multiple" onchange="fileChange(this)" style="display: none;opacity:0;" name="selectName" accept=".pdf">
+<div class="container">
+    <div class="top"></div>
+    <div class="content">
+        <div class="transform-tips">
+            <p>PDF转Word转换器</p>
+            <p>完美而迅速地将PDF转换成Word文件</p>
+        </div>
+        <div class="transform-server-notFound">
+            <div class="server-notFound-pic f_p_color iconfont icon-icon-test"></div>
+            <div class="server-notFound-tips f_t_color">
+                <p>服务器繁忙，请稍后再试！</p>
+            </div>
+            <div class="reload reload_color">
+                <p>重来一次</p>
+                <i class="reload-icon r_i_color iconfont icon-zhongxinjiazai"></i>
+            </div>
+        </div>
+        <div class="transform-failure">
+            <div class="failure-pic f_p_color iconfont icon-cuowu"></div>
+            <div class="failure-tips f_t_color">
+                <p>转换中似乎遇到了一些问题！</p>
+                <p>
+                    <a class="failure-detail" href="javascript:void(0);">查看详情</a>
+                    <a href="./../index.html">返回首页</a>
+                </p>
+            </div>
+            <div class="reload reload_color">
+                <p>重来一次</p>
+                <i class="reload-icon r_i_color iconfont icon-zhongxinjiazai"></i>
+            </div>
+        </div>
+        <div class="transform-failure-detail">
+            <p class="failure-detail-head">错误信息</p>
+            <p class="failure-detail-main"></p>
+        </div>
+        <div class="select-error">
+            <div class="file_error_pic f_e_pic_color iconfont icon-wenjiancuowu"></div>
+            <div class="error-tip e_tip_color">
+                <p>文件看起来不像是PDF。</p>
+            </div>
+            <div class="reload reload_color">
+                <p>重来一次</p>
+                <i class="reload-icon r_i_color iconfont icon-zhongxinjiazai"></i>
+            </div>
+        </div>
+        <div class="select-complete">
+            <div class="file-show-box">
+                <ul class="file-list"></ul>
+            </div>
+            <div class="upload-box">
+                <div class="transform-icon">
+                    <i class="before-transform icon-up-show"></i>
+                    <i class="transform icon-up-show"></i>
+                    <i class="after-transform icon-up-show"></i>
+                </div>
+                <div class="progress-bar">
+                    <div class="completed c_color"></div>
+                </div>
+                <div class="reselect-btn">
+                    <button type="button">重新选择</button>
+                </div>
+                <div class="upload-btn">
+                    <button type="submit">上传</button>
+                </div>
+            </div>
+            <div class="download-box">
+                <div class="success-tip-box">
+                    <p>转换成功</p>
+                    <i class="success-pic"></i>
+                </div>
+                <div class="download-button-box">
+                    <button>立即下载</button>
+                </div>
+            </div>
+        </div>
+        <div class="main-box main-color">
+            <div class="main-select-box select-box-color">
+                <div class="file_picture"></div>
+                <div class="file_tip">
+                    <p>将文件拖放至此处</p>
+                    <p>选择文件</p>
+                </div>
+            </div>
+        </div>
+        <div class="specification"></div>
+    </div>
+    <div class="footer"></div>
+</div>
+<div class="preview-box-wrapper"></div>
+<div class="preview-box-replica">
+    <div class="close-preview-box"></div>
+</div>
+<div class="preview-box" id="preview"></div>
+<script src="./../../lib/jquery-1.11.1/jquery.min.js"></script>
+<script src="./../../scripts/specification_cn.js"></script>
+<script src="./../../scripts/pdf_transform.js"></script>
+<script src="./../../scripts/translate_en_cn_page.js"></script>
+</body>
+</html>

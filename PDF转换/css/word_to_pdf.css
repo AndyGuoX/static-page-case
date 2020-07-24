@@ -1,0 +1,59 @@
+.main-color{
+    background-color: #49c8f2;
+}
+
+.select-box-color{
+    background-color: #46b8dd;
+    border: 2px dashed #41a2c2;
+}
+
+.f_e_pic_color{
+    color: #49c8f2;
+}
+
+.e_tip_color{
+    color: #49c8f2;
+}
+
+.reload_color{
+    border: 2px solid #49c8f2;
+}
+
+.reload_color p{
+    color: #49c8f2;
+}
+
+.r_i_color{
+    color: #49c8f2;
+}
+
+.c_color{
+    background-color: #49c8f2;
+}
+
+.f_t_color {
+    color: #49c8f2;
+}
+
+.f_t_color a {
+    color: #49c8f2;
+}
+
+.f_p_color {
+    color: #49c8f2;
+}
+
+.before-transform {
+    background: url("./../image/word.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.after-transform {
+    background: url("./../image/pdf.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.file-show-pic{
+    background: url("./../image/pdf2word.svg") no-repeat center;
+    background-size: 100% 100%;
+}

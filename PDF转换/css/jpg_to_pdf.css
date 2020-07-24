@@ -1,0 +1,59 @@
+.main-color{
+    background-color: #ebc50c;
+}
+
+.select-box-color{
+    background-color: #d7b50f;
+    border: 2px dashed #bda012;
+}
+
+.f_e_pic_color{
+    color: #ebc50c;
+}
+
+.e_tip_color{
+    color: #ebc50c;
+}
+
+.reload_color{
+    border: 2px solid #ebc50c;
+}
+
+.reload_color p{
+    color: #ebc50c;
+}
+
+.r_i_color{
+    color: #ebc50c;
+}
+
+.c_color{
+    background-color: #ebc50c;
+}
+
+.f_t_color {
+    color: #ebc50c;
+}
+
+.f_t_color a {
+    color: #ebc50c;
+}
+
+.f_p_color {
+    color: #ebc50c;
+}
+
+.before-transform {
+    background: url("./../image/img.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.after-transform {
+    background: url("./../image/pdf.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.file-show-pic{
+    background: url("./../image/pdf2img.svg") no-repeat center;
+    background-size: 100% 100%;
+}

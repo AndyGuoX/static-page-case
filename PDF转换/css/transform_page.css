@@ -1,0 +1,520 @@
+.main-box {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.main-select-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    width: 97%;
+    height: 90%;
+}
+
+.file_picture {
+    width: 100px;
+    height: 100px;
+    margin: 40px auto 15px;
+    background: url("./../image/file.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.file_tip {
+    width: 100%;
+    color: #fff;
+    font-size: 24px;
+}
+
+.file_tip p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.file_tip p:nth-child(2) {
+    text-decoration: underline;
+}
+
+.transform-tips {
+    width: 100%;
+    color: #000;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 24px;
+}
+
+.transform-tips p:nth-child(1) {
+    font-weight: bold;
+    font-size: 28px;
+}
+
+.transform-failure-detail {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    padding: 20px 40px;
+    overflow: auto;
+    color: #ff1000;
+    display: none;
+}
+
+.transform-failure-detail .failure-detail-head {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.transform-failure-detail .failure-detail-main {
+    line-height: 30px;
+}
+
+.transform-server-notFound {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #fff0fb;
+    border: 2px solid #ccc;
+    display: none;
+}
+
+.transform-server-notFound .server-notFound-pic {
+    width: 100px;
+    height: 100px;
+    margin: 40px auto 15px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.transform-server-notFound .server-notFound-tips {
+    width: 100%;
+    font-size: 24px;
+}
+
+.transform-server-notFound .server-notFound-tips p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.transform-failure {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #fff0fb;
+    border: 2px solid #ccc;
+    display: none;
+}
+
+.select-error {
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #fff0fb;
+    border: 2px solid #ccc;
+    display: none;
+}
+
+.transform-failure .failure-pic {
+    width: 100px;
+    height: 100px;
+    margin: 20px auto 15px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.failure-tips {
+    width: 100%;
+    font-size: 24px;
+}
+
+.failure-tips p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.failure-tips p:nth-child(2) {
+    margin-top: 10px;
+}
+
+.failure-tips a {
+    text-decoration: underline;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.select-error .file_error_pic {
+    width: 100px;
+    height: 100px;
+    margin: 40px auto 15px;
+    font-size: 100px;
+    text-align: center;
+    line-height: 100px;
+}
+
+.select-error .error-tip {
+    width: 100%;
+    font-size: 24px;
+}
+
+.select-error .error-tip p {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.select-error .reload, .transform-failure .reload, .transform-server-notFound .reload {
+    width: 150px;
+    height: 50px;
+    margin: 20px auto 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 0;
+    cursor: pointer;
+}
+
+.reload p {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.reload .reload-icon {
+    display: inline-block;
+    width: 30%;
+    height: 100%;
+    font-size: 25px;
+    text-align: center;
+    line-height: 50px;
+    vertical-align: middle;
+}
+
+.select-complete {
+    display: none;
+    width: 100%;
+    height: 300px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.file-show-box {
+    float: left;
+    width: 70%;
+    height: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    padding: 20px;
+}
+
+.file-list {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.file-list .file-box {
+    display: inline-block;
+    width: 20%;
+    height: 180px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis; /*超出显示省略号*/
+    margin: 0 10px;
+    position: relative;
+}
+
+.file-box:hover .li-mask-layer {
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+.file-box .li-mask-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    line-height: 130px;
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.file-list .file-box span {
+    white-space: nowrap; /*文本不换行*/
+}
+
+.file-list .file-box i {
+    display: block;
+    width: 100%;
+    height: 130px;
+}
+
+.upload-box, .download-box {
+    float: left;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-left: none;
+    position: relative;
+}
+
+.download-box {
+    display: none;
+}
+
+.download-box .success-tip-box {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.success-tip-box p:nth-child(1) {
+    font-size: 24px;
+    color: #13b81f;
+    margin: 20px 0;
+}
+
+.success-tip-box p:last-child {
+    font-size: 12px;
+    color: #0037ff;
+    margin-top: 25px;
+}
+
+.success-tip-box .success-pic {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background: url("./../image/success.png") no-repeat center;
+}
+
+.download-box .download-button-box {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 20%;
+}
+
+.download-button-box button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: #13b81f;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.download-button-box button:hover {
+    background-color: #0f9218;
+}
+
+.reselect-btn {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 20%;
+}
+
+.reselect-btn button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: #146fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.reselect-btn button:hover {
+    background-color: #0b15ff;
+}
+
+.upload-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 20%;
+}
+
+.upload-btn button {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 50px;
+    background-color: #146fff;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.upload-btn button:hover {
+    background-color: #0b15ff;
+}
+
+.progress-bar {
+    width: 75%;
+    height: 5%;
+    position: relative;
+    border: 1px solid #000;
+    margin: 50px auto 0;
+    border-radius: 50px;
+    overflow: hidden;
+    display: none;
+}
+
+.progress-bar .completed {
+    width: 0;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.transform-icon {
+    display: none;
+    width: 75%;
+    height: 40%;
+    margin: 0 auto;
+    font-size: 0;
+}
+
+.icon-up-show {
+    display: inline-block;
+    width: 33.3%;
+    height: 100%;
+}
+
+.transform {
+    background: url("./../image/transform-icon.png") no-repeat center;
+    background-size: 45% 35%;
+    animation: icon-rotate 1s linear infinite;
+}
+
+@keyframes icon-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        width: 962px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 738px;
+    }
+
+    .file-show-box {
+        width: 100%;
+    }
+
+    .upload-box, .download-box {
+        width: 100%;
+        padding: 20px 180px;
+        border: 2px solid #ccc;
+        border-top: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        width: 450px;
+    }
+
+    .file-show-box {
+        width: 100%;
+    }
+
+    .upload-box, .download-box {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .file-list .file-box {
+        width: 42%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 380px;
+    }
+}
+
+/*预览遮罩层显示*/
+
+.preview-box-wrapper {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(110, 110, 110, 0.5);
+    z-index: 1;
+    display: none;
+}
+
+.preview-box {
+    width: 840px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid #fff;
+    z-index: 2;
+    box-shadow: 10px 10px 10px #000;
+    background: #fff;
+    display: none;
+    overflow: auto;
+}
+
+.close-preview-box {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background: url("./../image/circle-cross.png") center no-repeat;
+    background-size: 100% 100%;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}

@@ -1,0 +1,59 @@
+.main-color{
+    background-color: #3d99f5;
+}
+
+.select-box-color{
+    background-color: #3b8de0;
+    border: 2px dashed #387ec4;
+}
+
+.f_e_pic_color{
+    color: #3d99f5;
+}
+
+.e_tip_color{
+    color: #3d99f5;
+}
+
+.reload_color{
+    border: 2px solid #3d99f5;
+}
+
+.reload_color p{
+    color: #3d99f5;
+}
+
+.r_i_color{
+    color: #3d99f5;
+}
+
+.c_color{
+    background-color: #3d99f5;
+}
+
+.f_t_color {
+    color: #3d99f5;
+}
+
+.f_t_color a {
+    color: #3d99f5;
+}
+
+.f_p_color {
+    color: #3d99f5;
+}
+
+.before-transform {
+    background: url("./../image/pdf.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.after-transform {
+    background: url("./../image/word.png") no-repeat center;
+    background-size: 100% 100%;
+}
+
+.file-show-pic{
+    background: url("./../image/word2pdf.svg") no-repeat center;
+    background-size: 100% 100%;
+}
